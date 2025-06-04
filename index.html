@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <header>
         <button>Add Book</button>
@@ -19,34 +21,38 @@
             <p><span class="heading">Progress:</span> Read</p>
             <button class="remove-book">Remove</button>
         </div>
-        <div class="card">
-            <p><span class="title">Title</span></p>
-            <p><span class="heading">Author:</span></p>
-            <p><span class="heading">Pages:</span></p>
-            <p><span class="heading">Progress:</span></p>
-            <button class="remove-book">Remove</button>
-        </div>
-        <div class="card">
-            <p><span class="title">Title</span></p>
-            <p><span class="heading">Author:</span></p>
-            <p><span class="heading">Pages:</span></p>
-            <p><span class="heading">Progress:</span></p>
-            <button class="remove-book">Remove</button>
-        </div>
-        <div class="card">
-            <p><span class="title">Title</span></p>
-            <p><span class="heading">Author:</span></p>
-            <p><span class="heading">Pages:</span></p>
-            <p><span class="heading">Progress:</span></p>
-            <button class="remove-book">Remove</button>
-        </div>
-        <div class="card">
-            <p><span class="title">Title</span></p>
-            <p><span class="heading">Author:</span></p>
-            <p><span class="heading">Pages:</span></p>
-            <p><span class="heading">Progress:</span></p>
-            <button class="remove-book">Remove</button>
-        </div>
     </div>
+
+    <dialog>
+        <form>
+            <div>
+                <label for="title" class="heading">Title: </label>
+                <input type="text" name="title" id="title" class="text-input">
+            </div>
+            <div>
+                <label for="author" class="heading">Author: </label>
+                <input type="text" name="author" id="author" class="text-input">
+            </div>
+            <div>
+                <label for="pages" class="heading">Pages: </label>
+                <input type="number" name="pages" id="pages" class="text-input">
+            </div>
+            <div>
+                <p class="heading">Have You Read It?</p>
+                <div id="radio">
+                    <label for="read">Yes: </label>
+                    <input type="radio" name="progress" id="read" value="read">
+
+                    <label for="not-read">No: </label>
+                    <input type="radio" name="progress" id="not-read" value="not-read">
+                </div>
+            </div>
+            <div class="dialog-buttons">
+                <button id="add-book">Add</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </form>
+    </dialog>
 </body>
+
 </html>
