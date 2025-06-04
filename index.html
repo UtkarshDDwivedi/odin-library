@@ -11,17 +11,9 @@
 
 <body>
     <header>
-        <button>Add Book</button>
+        <button type="button">Add Book</button>
     </header>
-    <div class="main">
-        <div class="card">
-            <p><span class="title">A Game of Thrones</span></p>
-            <p><span class="heading">Author:</span> George R. R. Martin</p>
-            <p><span class="heading">Pages:</span> 694</p>
-            <p><span class="heading">Progress:</span> Read</p>
-            <button class="remove-book">Remove</button>
-        </div>
-    </div>
+    <div class="main"></div>
 
     <dialog>
         <form>
@@ -44,12 +36,12 @@
                     <input type="radio" name="progress" id="read" value="read">
 
                     <label for="not-read">No: </label>
-                    <input type="radio" name="progress" id="not-read" value="not-read">
+                    <input type="radio" name="progress" id="not-read" value="not read">
                 </div>
             </div>
             <div class="dialog-buttons">
-                <button id="add-book">Add</button>
-                <button id="cancel">Cancel</button>
+                <button type="submit" id="add-book">Add</button>
+                <button type="button" id="cancel">Cancel</button>
             </div>
         </form>
     </dialog>
