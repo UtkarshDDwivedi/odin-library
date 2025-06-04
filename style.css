@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cinzel", serif;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    background: #d4a373;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+header button {
+    width: 140px;
+    height: 60px;
+    background: #faedcd;
+    box-shadow: 6px 6px #b97f45;
+}
+
+header button:hover {
+    background: #ebd6a7;
+    box-shadow: 0px 0px;
+}
+
+.main {
+    display: grid;
+    background: #ccd5ae;
+    margin: 24px 64px 64px 64px;
+    padding: 24px;
+    border-radius: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 25%));
+    gap: 24px;
+    grid-auto-rows: 250px;
+    border: 8px double #fefae0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+    background: #e9edc9;
+    height: 250 px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 8px 8px #fefae0;
+}
+
+.card :first-child {
+    align-self: center;
+
+}
+
+.card :last-child {
+    align-self: center;
+}
+
+.card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.remove-book {
+    width: 110px;
+    height: 50px;
+    background: #fefae0;
+}
+
+.remove-book:hover {
+    background: rgba(216, 210, 161, 0.7);
+}
+
+.title {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
